@@ -71,5 +71,5 @@ case "$1" in
         echo "      start    Start the server"
         echo "      stop     Stop the server gracefully" 
         echo "      restart  Restart server" 
-  		exit 1
+        exit 1
 esac
