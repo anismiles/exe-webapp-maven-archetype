@@ -17,7 +17,6 @@
 		<resource>src/main/resources/jetty.properties</resource>
 		<resource>src/main/resources/log4j.properties</resource>
 		<resource>src/main/resources/spring.xml</resource>
-		<resource>script/run.sh</resource>
 		<resource>src/main/webapp/static/hello.html</resource>
 		<resource>src/main/webapp/WEB-INF/web.xml</resource>
 		<resource>src/main/webapp/index.jsp</resource>
@@ -30,10 +29,10 @@
 		<resource>src/test/resources/jetty.properties</resource>
 		<resource>src/test/resources/spring-test.xml</resource>
 	</testResources>
-	
+
 	<siteResources>
 		<!-- script -->
-		
+		<resource filtered="false">run.sh</resource>
 		<resource>lib/info.txt</resource>
 	</siteResources>
 
