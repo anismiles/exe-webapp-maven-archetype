@@ -1,0 +1,9 @@
+Put your local dependencies in this directory, and update you pom like this:
+
+<dependency>
+	<groupId>group-id</groupId>
+	<artifactId>artifact-id</artifactId>
+	<version>version</version>
+	<scope>system</scope>
+	<systemPath>${lib}/name-of-jar.jar</systemPath>
+</dependency>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:ctx="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      	http://www.springframework.org/schema/context 
+      	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+      	http://www.springframework.org/schema/util 
+      	http://www.springframework.org/schema/util/spring-util-3.0.xsd
+      	http://www.springframework.org/schema/data/mongo
+      	http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd 
+      	http://www.springframework.org/schema/task 
+      	http://www.springframework.org/schema/task/spring-task-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:aop="http://www.springframework.org/schema/aop">
+
+	<bean id="jettyTestServer" class="JettyTestServer" />
+
+	<bean id="testProps"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="singleton" value="true" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:/jetty.properties</value>
+			</list>
+		</property>
+	</bean>
+</beans>

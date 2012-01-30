@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Animesh Kumar <animesh@strumsoft.com>. Licensed under 
+	the Apache License, Version 2.0 (the "License"); you may not use this file 
+	except in compliance with the License. You may obtain a copy of the License 
+	at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable 
+	law or agreed to in writing, software distributed under the License is distributed 
+	on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either 
+	express or implied. See the License for the specific language governing permissions 
+	and limitations under the License. -->
+<archetype>
+	<id>webapp-self-maven-archetype</id>
+	<resources>
+		<!-- source -->
+		<resource>src/main/java/HelloWorldHandler.java</resource>
+		<resource>src/main/java/Main.java</resource>
+		<resource>src/main/resources/build.properties</resource>
+		<resource>src/main/resources/jetty.properties</resource>
+		<resource>src/main/resources/log4j.properties</resource>
+		<resource>src/main/resources/spring.xml</resource>
+		<resource>script/run.sh</resource>
+		<resource>src/main/webapp/static/hello.html</resource>
+		<resource>src/main/webapp/WEB-INF/web.xml</resource>
+		<resource>src/main/webapp/index.jsp</resource>
+	</resources>
+
+	<testResources>
+		<!-- test -->
+		<resource>src/test/java/BasicIntegrationTest.java</resource>
+		<resource>src/test/java/JettyTestServer.java</resource>
+		<resource>src/test/resources/jetty.properties</resource>
+		<resource>src/test/resources/spring-test.xml</resource>
+	</testResources>
+	
+	<siteResources>
+		<!-- script -->
+		
+		<resource>lib/info.txt</resource>
+	</siteResources>
+
+	<!-- <testSources> <source>src/test/java/AppTest.java</source> </testSources> -->
+</archetype>
