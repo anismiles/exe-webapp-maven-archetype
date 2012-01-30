@@ -23,7 +23,7 @@ JAVA_ARGS=
 #JAVA_ARGS="-Dconfig=${EXTRA_JETTY_PROPS_FILE}"
 
 start() {
-	echo "PID_FILE ==> ${PID_FILE}"
+    echo "PID_FILE ==> ${PID_FILE}"
     if [[ -f ${PID_FILE} ]]; then
         echo "Already running"
         exit 1
@@ -40,7 +40,7 @@ start() {
 
 stop() {
     # Try gracefully first
-	java ${JAVA_ARGS} -jar ${PATH_TO_WAR} stop
+    java ${JAVA_ARGS} -jar ${PATH_TO_WAR} stop
     sleep 10
     if [[ -f ${PID_FILE} ]]; then
         PID=`cat ${PID_FILE}`
